@@ -10,3 +10,6 @@ snapshot = tracemalloc.take_snapshot()
 
 for stat in snapshot.statistics("lineno"):
     print(stat)
+
+for trace in snapshot.traces:
+    print(trace)
